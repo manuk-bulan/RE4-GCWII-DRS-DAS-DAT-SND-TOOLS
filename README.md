@@ -50,7 +50,7 @@ You can also drag a `.SND` or `.drs` file onto the exe to open it directly.
 ### DRS / DAS Manager (container unpack / repack)
 - Extracts `.drs`, `.das`, `.dat`, `.udas`, `.map` and `.decmp`, Final and E3 versions.
   - Output: a `<name>\` folder plus a `<name>.idxbig` manifest.
-- Also reads `.idxbig` files made by JADERLINK DATDRS TOOL (old format).
+- Also reads `.idxbig` manifests in the older `KEY:VALUE` format.
 - Shows every part with its offset, size and status:
   - **Modified**: you edited the file after extracting;
   - **MISSING**: the file is gone;
@@ -125,7 +125,6 @@ Settings are stored in `re4_gcwii_drs_das_dat_snd_tools.ini` next to the exe.
 
 ## Credits
 - **Manuk Bulan**: tool and GUI.
-- **JADERLINK**: [JADERLINK_DATDRS_TOOL](https://github.com/JADERLINK/JADERLINK_DATDRS_TOOL) (MIT License, © JADERLINK). The DAT/DAS/DRS unpack/repack in this tool is based on it.
 
 ## Disclaimer
 This is a fan-made modding tool. It is not affiliated with or endorsed by Capcom or Nintendo. *Resident Evil 4* is a trademark of Capcom.
@@ -142,7 +141,7 @@ This is a fan-made modding tool. It is not affiliated with or endorsed by Capcom
 - **DRS / DAS Manager**:
   - extract dan repack `.drs`, `.das`, `.dat`, `.udas`, `.map`, `.decmp`;
   - menandai file yang diubah atau hilang;
-  - bisa membaca `.idxbig` dari JADERLINK DATDRS TOOL.
+  - bisa membaca `.idxbig` format lama (`KEY:VALUE`).
 - **SND Audio Studio**:
   - putar, ganti (WAV / DSP), export, import, dan edit loop sampel di `_END.SND`;
   - drag & drop `.wav` / `.dsp` langsung ke baris sampel;
